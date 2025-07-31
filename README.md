@@ -6,12 +6,12 @@ A Python tool for processing and analyzing ice mechanical testing data, matching
 
 ## Features
 
-- **Automated Data Processing**: Batch process multiple experiment folders
-- **Environmental Correlation**: Match mechanical test data with CTD and T-Stick measurements
+- **Automated Data Processing**: Batch processes multiple experiment folders
+- **Matching Data in time**: Match mechanical test data and their timing with CTD and T-Stick measurements
 - **Flexible Output**: Generate both individual folder summaries and master datasets
-- **Smart Processing**: Skip already processed folders to save time
-- **Comprehensive Logging**: Track processing status and errors
-- **Configurable**: Easy configuration via YAML files
+- **Custom Processing**: Skip already processed folders to save time
+- **Logging**: Track processing status and errors
+- **Configurable**: Configuration via YAML files
 
 ## Installation
 
@@ -86,8 +86,8 @@ ByExperiment/
 ### Output Files
 
 For each experiment folder:
-- `info_*.txt`: Detailed information for each test file
-- `experiment_summary.csv`: Tabular summary of all tests in the folder
+- `info_*.txt`: Information for each test file
+- `experiment_summary.csv`: Tabular summary of all tests in the folder ( e.g. summarizes all results for files in in the KW31 directory )
 
 Master output:
 - `ALL_EXPERIMENTS_SUMMARY.csv`: Combined data from all experiments
@@ -165,7 +165,7 @@ df = pd.read_csv("ALL_EXPERIMENTS_SUMMARY.csv", sep=';', decimal=',')
 # Your analysis code here...
 ```
 
-## Development
+## Development   (-> Testing is not yet available!)
 
 ### Project Structure
 
@@ -221,9 +221,6 @@ A: Ensure your SBE log files follow the pattern `SBE*.log` and are in the correc
 **Q: Analysis runs but no data in output**
 A: Check that your test files match the expected patterns (`Test02_*.txt`, `BiegeF_*.txt`, `Emodul_*.txt`).
 
-**Q: Timestamp matching issues**
-A: Verify that your system clocks were synchronized during data collection.
-
 ### Logging
 
 Enable detailed logging:
@@ -233,17 +230,13 @@ import logging
 logging.basicConfig(level=logging.DEBUG)
 ```
 
-## License
-
-.
-
 ## Citation
 
 If you use this software in your research, please cite:
 
 ```bibtex
 @software{ice_experiment_analyzer,
-  author = {Lea Nupnau},
+  author = {tbd},
   title = {Ice Experiment Data Analyzer},
   url = {https://github.com/yourusername/ice-experiment-analyzer},
   year = {2025}
@@ -252,12 +245,10 @@ If you use this software in your research, please cite:
 
 ## Contact
 
-- **Author**: [Your Name]
-- **Email**: [Your Email]
-- **Institution**: [Your Institution]
+- **Author**: [tbd]
+- **Email**: [tbd]
+- **Institution**: [Ifm Hamburg University]
 
 ## Acknowledgments
 
-- Thanks to the ice mechanics research team
-- CTD and T-Stick sensor manufacturers
-- Open source Python community
+- TBD
