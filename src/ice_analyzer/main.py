@@ -19,12 +19,12 @@ import numpy as np
 from datetime import datetime, timedelta
 import matplotlib.pyplot as plt
 
-from file_utils import *
-from plots import *
-from dewesoft_reader import *
-from sbe_reader import *
-from sbe_w_density_reader import *
-from tstick_reader import *
+from .utils.file_utils import *
+from .visualization.plots import *
+from .data_processing.dewesoft_reader import read_data
+from .data_processing.sbe_reader import *
+from .data_processing.sbe_w_density_reader import *
+from .data_processing.tstick_reader import *
 
 # Configure logging
 logging.basicConfig(
@@ -195,7 +195,7 @@ class IceExperimentAnalyzer:
         """Process a single test file and extract relevant data."""
         try:
             # Read test data (your existing function)
-            meta, time_data, force_data, corrected time = read_data(str(test_file))
+            meta, time_data, force_data, corrected_time = read_data(str(test_file))
             #meta, corrected_time = correct_start_time(meta) #(old line)
             
             # Convert to datetime

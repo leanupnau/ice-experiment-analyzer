@@ -1,9 +1,8 @@
 # Ice Experiment Data Analyzer 🧊
 
-A Python tool for processing and analyzing ice mechanical testing data, correlating test results with environmental measurements from CTD and T-Stick sensors.
+A Python tool for processing and analyzing ice mechanical testing data, matching mechanical test results with environmental measurements from CTD and T-Stick sensors.
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Features
 
@@ -75,11 +74,11 @@ ByExperiment/
 ├── KW30Plate/
 │   ├── SBE*.log          # CTD data files
 │   ├── T_Stick_2025*.log # T-Stick temperature profiles
-│   ├── *.cnv             # Density data
+│   ├── SBE*.cnv             # Density data
 │   ├── Test02_*.txt      # Mechanical test data
 │   ├── BiegeF_*.txt      # Bending strength tests
 │   └── Emodul_*.txt      # E-modulus tests
-├── KW31Plate/
+├── KW31/
 │   └── ...
 └── ...
 ```
@@ -236,7 +235,7 @@ logging.basicConfig(level=logging.DEBUG)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+.
 
 ## Citation
 
@@ -244,7 +243,7 @@ If you use this software in your research, please cite:
 
 ```bibtex
 @software{ice_experiment_analyzer,
-  author = {Your Name},
+  author = {Lea Nupnau},
   title = {Ice Experiment Data Analyzer},
   url = {https://github.com/yourusername/ice-experiment-analyzer},
   year = {2025}
