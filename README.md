@@ -57,10 +57,10 @@ analyzer.run_analysis(skip_existing=True)
 
 ```bash
 # Process all new experiments
-python -m src.ice_analyzer.main
+python3 -m src.ice_analyzer.main
 
 # Reprocess all experiments
-python -m src.ice_analyzer.main --no-skip-existing
+python3 -m src.ice_analyzer.main --no-skip-existing
 ```
 
 ## Data Structure
